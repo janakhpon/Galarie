@@ -26,11 +26,11 @@ body {
     right: 6rem;
 
     &:hover{
-    background:radial-gradient(circle,rgb(8, 202, 8),rgb(16, 16, 109),rgb(255, 0, 179));
+    background-image: radial-gradient( circle farthest-corner at -2% 1.4%,  rgba(255,15,15,1) 0%, rgba(228,0,228,1) 100.7% );
     }
 
     &:active{
-        background: radial-gradient(red 20%, blue 20%, white 40%);
+        background-image: radial-gradient( circle 404px at -8% -12.9%,  rgba(171,250,36,0.78) 19.7%, rgba(248,10,194,0.8) 59.3%, rgba(0,19,250,0.7) 95.6% );
     }
   }
 

@@ -551,8 +551,6 @@ body {
   border: 0.1rem solid #d0cfce;
   border-radius: 2rem;
   outline: none; }
-  .searchbar:hover {
-    filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem blue) hue-rotate(90deg); }
   .searchbar:focus {
     border: 0.2rem solid #008abf;
     transition: 0.35s ease;
