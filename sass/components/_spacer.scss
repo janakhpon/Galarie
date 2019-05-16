@@ -1,0 +1,25 @@
+.spacer{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+       text-align: center;
+       position: fixed;
+       z-index: 400;
+       width: 100vw;
+       padding: 0.2rem;
+       margin-top: 5rem;
+       height: 5rem;
+       background: $color-primary-dark;
+
+
+
+
+       &--top{
+           color: $color-white;
+           align-self: stretch;
+           flex-grow: 1;
+           flex-shrink: 1;
+       }
+   }
