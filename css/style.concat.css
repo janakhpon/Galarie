@@ -454,22 +454,22 @@ body {
     position: fixed;
     z-index: 400;
     border-radius: 50%;
-    background: radial-gradient(circle, red, #050547, #e7e73c);
+    background-image: radial-gradient(circle 919px at -3.2% 49.7%, rgba(92, 225, 22, 0.96) 0.1%, #14bde7 99.4%);
     height: 7rem;
     width: 7rem;
     position: fixed;
     bottom: 10rem;
     right: 6rem; }
     .photos__changer:hover {
-      background: radial-gradient(circle, #08ca08, #10106d, #ff00b3); }
+      background-image: radial-gradient(circle farthest-corner at -2% 1.4%, #ff0f0f 0%, #e400e4 100.7%); }
     .photos__changer:active {
-      background: radial-gradient(red 20%, blue 20%, white 40%); }
-  .photos__changer:hover ~ .photos__img {
-    filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem blue) hue-rotate(90deg);
-    cursor: wait; }
-  .photos__changer:active ~ .photos__img {
-    filter: grayscale(0%) contrast(150%) saturate(170%) brightness(103%);
+      background-image: radial-gradient(circle 404px at -8% -12.9%, rgba(171, 250, 36, 0.78) 19.7%, rgba(248, 10, 194, 0.8) 59.3%, rgba(0, 19, 250, 0.7) 95.6%); }
+  .photos__changer:hover {
     cursor: pointer; }
+  .photos__changer:hover ~ .photos__img {
+    filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem #09ff00) hue-rotate(40deg); }
+  .photos__changer:active ~ .photos__img {
+    filter: grayscale(0%) contrast(150%) saturate(150%) brightness(103%); }
   .photos__img {
     /* Just in case there are inline attributes */
     width: 100% !important;
@@ -695,6 +695,8 @@ body {
     .navigation__button {
       top: 3rem;
       right: 3rem; } }
+  .navigation__button:hover {
+    filter: grayscale(0%) drop-shadow(0.5rem 0.5rem 2rem #00ffea) hue-rotate(40deg); }
 
 .navigation__background {
   height: 6rem;
@@ -747,7 +749,7 @@ body {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all .4s; }
+  transition: all 0.4s; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
@@ -776,11 +778,11 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    transition: all .2s; }
+    transition: all 0.2s; }
   .navigation__icon::before {
-    top: -.8rem; }
+    top: -0.8rem; }
   .navigation__icon::after {
-    top: .8rem; }
+    top: 0.8rem; }
 
 .navigation__button:hover .navigation__icon::before {
   top: -1rem; }
