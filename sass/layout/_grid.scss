@@ -18,7 +18,7 @@ body {
     position: fixed;
     z-index: 400;
     border-radius: 50%;
-    background:radial-gradient(circle,red,rgb(5, 5, 71),rgb(231, 231, 60));
+    background-image: radial-gradient( circle 919px at -3.2% 49.7%,  rgba(92,225,22,0.96) 0.1%, rgba(20,189,231,1) 99.4% );
     height: 7rem;
     width: 7rem;
     position: fixed;
@@ -34,16 +34,17 @@ body {
     }
   }
 
-  
+  &__changer:hover{
+    cursor: pointer;
+  }
 
   &__changer:hover ~ &__img {
-    filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem blue) hue-rotate(90deg);
-    cursor: wait;
+    filter: grayscale(0%) drop-shadow(1.5rem 1.5rem 2rem rgb(9, 255, 0)) hue-rotate(40deg);
+    
   }
 
   &__changer:active ~ &__img {
-    filter: grayscale(0%) contrast(150%) saturate(170%) brightness(103%);
-    cursor: pointer;
+    filter: grayscale(0%) contrast(150%) saturate(150%) brightness(103%);
   }
 
   &__img {
