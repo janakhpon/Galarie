@@ -1,0 +1,53 @@
+.sock{
+    background-color: $color-primary-dark;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    width: 90%;
+    height: 15vh;
+    margin: 2rem;
+    align-content: centers;
+    margin:0 4.9999% 0 4.9999%;
+    z-index: 20;
+    
+    
+
+    &__big{
+
+            display: flex;
+            flex-basis: 80%;
+            height: 9.9999vh;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+
+
+        &--left{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 44.9999%;
+            padding: 1.2rem;
+        }
+
+        &--right{
+
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 44.9999%;
+            padding: 1.2rem;
+        }
+
+    }
+
+    &__small{
+        height: 4.9999vh;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+}
