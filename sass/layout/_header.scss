@@ -70,7 +70,53 @@
     margin: 0.1rem;
     padding: 0.1rem;
     align-self: center;
-    flex-basis: 45%;
+    flex-basis: 50%;
+
+    &--form {
+      width: 100%;
+    }
+  }
+
+  .searchbar {
+    margin: 0 auto;
+    width: 100%;
+    height: 4rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    border: 0.1rem solid #d0cfce;
+    border-radius: 1rem;
+    outline: none;
+
+    &:focus {
+      border: 0.2rem solid #008abf;
+      transition: 0.35s ease;
+      color: #008abf;
+
+      &::-webkit-input-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      &::-moz-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+
+      &:-ms-placeholder {
+        transition: opacity 0.45s ease;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .nav__search {
+    margin: 0.1rem;
+    padding: 0.1rem;
+    align-self: center;
+    flex-basis: 65%;
 
     &--form {
       width: 100%;
