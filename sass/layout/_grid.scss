@@ -25,6 +25,16 @@ body {
     bottom: 10rem;
     right: 6rem;
 
+    @include respond(tab-port) {
+      bottom: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      bottom: 3rem;
+      right: 3rem;
+    }
+
     &:hover{
     background-image: radial-gradient( circle farthest-corner at -2% 1.4%,  rgba(255,15,15,1) 0%, rgba(228,0,228,1) 100.7% );
     }
